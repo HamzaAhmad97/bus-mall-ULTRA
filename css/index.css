@@ -1,0 +1,184 @@
+body {
+  min-height: 100vh;
+  background:#444;
+  overflow-x: hidden;
+  position: relative;
+}
+html {
+  background: black;
+}
+.flexRow {
+  display: flex;
+ }
+ .flexCol {
+   display: flex;
+   flex-direction: column;
+ }
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+header::before {
+  content: ' ';
+  position: absolute;
+  background: black;
+  inset: 0;
+  opacity: 1;
+  z-index: -1;
+}
+header a {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  margin-left: -3rem;
+  text-decoration: none;
+}
+#hero {
+  background: url(https://www.synthesio.com/wp-content/uploads/2018/12/Black-Friday.jpg);
+  height: 100vh;
+  background-position-y: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+#hero h1 {
+  font-size: 5rem;
+  color: white;
+}
+
+#logo {
+  width: 90px;
+  height: 80px ;
+  gap: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  outline: none;
+}
+#logo p {
+  color: yellow;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#logo :is(span) {
+  font-weight: bold;
+}
+#navBtn {
+  margin-right: 2rem;
+  width: 50px;
+  height: 50px;
+  gap: 0.25rem;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+}
+#navBtn img:hover {
+  filter: drop-shadow(4px 0px 5px #ffffff);
+  filter: drop-shadow(-4px 0px 5px #ffffff);
+}
+#navBtn:hover div{
+  background: rgba(255, 255, 0, 0.705);
+}
+#navBtn div {
+  height: 10px;
+  width: 50px;
+  background: yellow;
+  border-radius: 5px;
+}
+#navBtn :nth-child(1) {
+  align-self: flex-end;
+}
+#navBtn :nth-child(2) {
+  align-self: center;
+}
+#navBtn :nth-child(3) {
+  align-self: flex-start;
+}
+nav {
+  background: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  align-items: center;
+  justify-content: space-around;
+ top: 0;
+  left: 100%;
+  margin-left: 0;
+  padding-left: 0;
+  outline: none;
+  z-index: 2;
+}
+/* #navBtn::before {
+  content: ' eeeeeeeeeeeeeee';
+  background: red;
+  inset: 0;
+  z-index: 0;
+} */
+nav a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+nav a:hover {
+  color: darkgray;
+}
+/* nav::before {
+content: " ";
+  background: rgba(255, 255, 0, 0.2); 
+  filter: blur(5px);
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+} */
+#navItm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:250px;
+  margin: auto;
+  font-size: 15rem;
+  width: 100%;
+  z-index: 1;
+}
+#navItm  p {
+  font-size: 25rem;
+  width: fit-content;
+  height: 100%;
+  color: white;
+}
+nav img {
+  position: absolute;
+  top: 90%;
+  right: 89%;
+  cursor: pointer;
+
+}
+nav img:hover {
+  filter: drop-shadow(4px 0px 5px #666666);
+  /* filter: drop-shadow(-4px 0px 5px #666666); */
+
+}
+main section {
+  height: 100vh;
+
+}
+main section:nth-child(1) {
+  background: #191919 ;
+}
+main section:nth-child(2) {
+  background: #333;
+}
+main section:nth-child(3) {
+  background: #4d4d4d ;
+}
+main section:nth-child(4) {
+  background: #666 ;
+}
