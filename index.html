@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+  <title>BUS MALL ULTRA</title>
+</head>
+<body>
+  <header class="flexRow" id="header">
+    <div id="logo" class="flexCol">
+      <img src="https://img.icons8.com/ios-filled/40/ffff00/shopping-mall.png"/>
+      <p id="logoP">Bus Mall <span>Ultra</span></p>
+    </div>
+    <a href="#hero">Bus Mall Ultra</a>
+    <div id="navBtn" class="flexCol" onclick="showSide(true)">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/back.png"/>
+    </div>
+  </header>
+  <section id="hero">
+    <h1 style="margin-top: 3rem; font-family: 'Josefin Sans', sans-serif; cursor: pointer;">Let's get shopping</h1>
+    <img src="https://lh3.googleusercontent.com/proxy/2_ikbg4u1JqIl02VlL-wwh8LCchaWjBIa7wc6B87QXyIHJUt1EEex3_b-sPa-VKkoS8C1YokmvT_BL2FnZjYvJXBU0wJszw" style="width: 100px; margin-top: 1rem; "/>
+  </section>
+  <nav class="flexRow">
+    <a onclick="showSide(false)" href="#Catalogue">Catalogue</a>
+    <a onclick="showSide(false)"  href="#Shop">Shop</a>
+    <a  onclick="showSide(false)"  href="#More">More</a>
+    <a onclick="showSide(false)"  href="#About">About</a>
+    <img onclick="showSide(false)" src="https://img.icons8.com/ios-filled/50/ffffff/forward--v1.png"/>
+  </nav>
+  <div id="navItm">
+    <p></p>
+  </div>
+  <main>
+    <section id="Catalogue"></section>
+    <section id="Shop"></section>
+    <section id="More"></section>
+    <section id="About"></section>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="./script/index.js"></script>
+</body>
+</html>
