@@ -1,6 +1,10 @@
 /* eslint-disable eqeqeq */
 'use strict';
 
+////////////////////////////////////////////////////
+//////////////////// Bus Mall New //////////////////
+////////////////////////////////////////////////////
+
 let navBtn = document.getElementById('navBtn');
 let navWin = document.querySelector('nav');
 // navWin.addEventListener('mouseenter', showBehind);
@@ -20,7 +24,7 @@ navWin.style.display = 'none';
 function showSide(cond) {
   if (cond) {
     navWin.style.top = `${window.scrollY}px`;
-    backgroundView.style.top = `${window.scrollY + 250}px`;
+    backgroundView.style.top = `${window.scrollY + 280}px`;
     navWin.style.display = 'flex';
 
     let c = 50;
@@ -124,7 +128,7 @@ function goDown() {
     hAndImg[1].style.opacity = k;
     window.scrollTo(0, c);
     c += 5;
-    k -= 0.01;
+    k -= 0.001;
     if (c >= 980) {
       hAndImg[0].style.opacity = 1;
       hAndImg[1].style.opacity = 1;
@@ -132,3 +136,9 @@ function goDown() {
     }
   }, 1);
 }
+
+////////////////////////////////////////////////////
+///////////////// Bus Mall Original ////////////////
+////////////////////////////////////////////////////
+// to be added to 
+

@@ -17,7 +17,8 @@
       <img src="https://img.icons8.com/ios-filled/40/ffff00/shopping-mall.png"/>
       <p id="logoP">Bus Mall <span>Ultra</span></p>
     </div>
-    <a href="#hero">Bus Mall Ultra</a>
+    <a id="heading" href="#hero">Bus Mall Ultra</a>
+    <img id="cart" src="https://img.icons8.com/material-outlined/30/ffffff/shopping-cart--v1.png"/>
     <div id="navBtn" class="flexCol" onclick="showSide(true)">
       <img src="https://img.icons8.com/ios-filled/50/ffffff/back.png"/>
     </div>
@@ -37,10 +38,47 @@
     <p></p>
   </div>
   <main>
-    <section id="Catalogue"></section>
-    <section id="Shop"></section>
-    <section id="More"></section>
-    <section id="About"></section>
+    <section id="Catalogue" class="flexCol" style="justify-content: center; ">
+      <h2 style="text-align: center
+      ; font-size: 3rem; margin: 2rem;">Catalogue</h2>
+      <div style=" margin-bottom: 2rem;">
+        <div id="controls" style="padding: 0 5.5rem;" class="flexRow">
+          <div>
+            <label for="numOfRnds" style="font-size: 1.5rem; margin-right: 1rem;">Number of rounds</label>
+            <input style="width: 8rem; height: 2rem; " id="numOfRnds" type="number" placeholder="25">
+          </div>
+          <p style="font-size: 1.5rem; margin-left: -6.25rem;">Rounds left: <span>25</span></p>
+          <div>
+            <button>Begin</button>
+            <button>Reset</button>
+          </div>
+        </div>
+        
+        <div id="imgs" class="flexRow" style=" margin-top: 2rem;">
+          <div><img src="./img/pet-sweep.jpg" alt=""></div>
+          <div><img src="./img/scissors.jpg" alt=""></div>
+          <div><img src="img/usb.gif" alt=""></div>
+        </div>
+
+        
+      </div>
+      <div  style=" display: flex; ">
+        <button style="justify-self: center; align-self: center; margin: auto;   " disabled>Results</button>
+      </div>
+      <div style=" margin-top: 2rem; padding: 2rem  5rem;">
+        <p style="line-height: 1.5rem; font-size: 1.25rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, expedita voluptate. Impedit blanditiis, odio distinctio iusto aperiam consectetur facere consequuntur minus. Dicta unde, nemo reiciendis adipisci architecto porro? Qui, autem.
+        Minus ipsum accusamus labore id debitis, esse, vero corporis praesentium blanditiis voluptas aliquam. Similique odio dolor recusandae assumenda quo, modi eveniet fugiat neque ipsa obcaecati repellendus dignissimos ipsum non. Ab! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus a, officia dolorem dicta numquam voluptate? Suscipit architecto vitae unde molestiae! Placeat corrupti laborum veniam, iusto possimus eveniet pariatur natus dolorem.lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa incidunt suscipit dolore harum velit, necessitatibus numquam dignissimos asperiores alias, saepe animi, maiores aliquid iure ullam esse cumque iusto et repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia numquam harum vitae. Porro quaerat sed, non adipisci fugiat odio expedita, repellat, libero necessitatibus iste sapiente ducimus aperiam reiciendis? Explicabo, eius.</p>
+      </div>
+    </section>
+    <section id="Shop">
+
+    </section>
+    <section id="More">
+
+    </section>
+    <section id="About">
+
+    </section>
   </main>
   <footer>
 
